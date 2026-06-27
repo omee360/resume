@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { Typewriter } from "@/components/ui/typewriter";
+import { VisualCard } from "@/components/sections/visual-card";
 
 const signals = [
   {
@@ -57,55 +58,69 @@ export default function Home() {
   return (
     <Container>
       <section className="py-[52px] md:py-[78px]">
-        <h1 className="grid max-w-[760px] gap-1.5 text-[clamp(28px,4.2vw,52px)] font-extrabold leading-[1.12] tracking-[-0.026em] text-ink">
-          <span>Hello! I am</span>
-          <Typewriter words={["Umair.", "a web developer.", "a WordPress developer.", "a frontend developer."]} />
-        </h1>
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.74fr]">
+          <div>
+            <h1 className="grid max-w-[760px] gap-1.5 text-[clamp(28px,4.2vw,52px)] font-extrabold leading-[1.12] tracking-[-0.026em] text-ink">
+              <span>Hello! I am</span>
+              <Typewriter
+                words={[
+                  "Umair.",
+                  "a web developer.",
+                  "a WordPress developer.",
+                  "a frontend developer.",
+                ]}
+              />
+            </h1>
 
-        <p className="mt-[14px] font-mono text-[13px] font-extrabold uppercase tracking-[0.08em] text-brand">
-          Umair Haider Hashmi
-        </p>
+            <p className="mt-[14px] font-mono text-[13px] font-extrabold uppercase tracking-[0.08em] text-brand">
+              Umair Haider Hashmi
+            </p>
 
-        <div className="mt-[22px] inline-flex items-center gap-[9px] rounded-full border border-line bg-[color-mix(in_srgb,var(--color-paper)_84%,transparent)] px-3 py-2 text-[13px] font-extrabold text-muted">
-          <span className="h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_0_6px_rgba(34,197,94,0.14)]" />
-          Available for selected website projects
-        </div>
-
-        <p className="mt-[18px] max-w-[720px] text-[clamp(24px,3vw,38px)] font-semibold leading-[1.18] tracking-[-0.02em] text-ink">
-          I build clean, responsive websites for businesses, agencies, and
-          teams.
-        </p>
-
-        <p className="mt-4 max-w-[620px] text-[clamp(16px,1.35vw,18px)] leading-[1.75] text-muted">
-          I am a web developer experienced in custom WordPress builds,
-          responsive frontend work, and practical website systems for clients,
-          teams, and growing businesses.
-        </p>
-
-        <div className="mt-[34px] flex flex-wrap gap-[13px]">
-          <Button href="/contact">Hire me for a project</Button>
-          <Button href="/projects" variant="secondary">
-            View work
-          </Button>
-          <Button href="/umair-resume.txt" variant="ghost" download>
-            Download resume
-          </Button>
-        </div>
-
-        <div className="mt-[34px] grid max-w-[720px] grid-cols-1 gap-3 sm:grid-cols-3">
-          {signals.map((s) => (
-            <div
-              key={s.title}
-              className="rounded-md border border-line bg-[color-mix(in_srgb,var(--color-paper)_76%,transparent)] p-4"
-            >
-              <strong className="block text-[15px] tracking-[-0.03em]">
-                {s.title}
-              </strong>
-              <span className="mt-[5px] block text-[13px] text-soft">
-                {s.text}
-              </span>
+            <div className="mt-[22px] inline-flex items-center gap-[9px] rounded-full border border-line bg-[color-mix(in_srgb,var(--color-paper)_84%,transparent)] px-3 py-2 text-[13px] font-extrabold text-muted">
+              <span className="h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_0_6px_rgba(34,197,94,0.14)]" />
+              Available for selected website projects
             </div>
-          ))}
+
+            <p className="mt-[18px] max-w-[720px] text-[clamp(24px,3vw,38px)] font-semibold leading-[1.18] tracking-[-0.02em] text-ink">
+              I build clean, responsive websites for businesses, agencies, and
+              teams.
+            </p>
+
+            <p className="mt-4 max-w-[620px] text-[clamp(16px,1.35vw,18px)] leading-[1.75] text-muted">
+              I am a web developer experienced in custom WordPress builds,
+              responsive frontend work, and practical website systems for
+              clients, teams, and growing businesses.
+            </p>
+
+            <div className="mt-[34px] flex flex-wrap gap-[13px]">
+              <Button href="/contact">Hire me for a project</Button>
+              <Button href="/projects" variant="secondary">
+                View work
+              </Button>
+              <Button href="/umair-resume.txt" variant="ghost" download>
+                Download resume
+              </Button>
+            </div>
+
+            <div className="mt-[34px] grid max-w-[720px] grid-cols-1 gap-3 sm:grid-cols-3">
+              {signals.map((s) => (
+                <div
+                  key={s.title}
+                  className="rounded-md border border-line bg-[color-mix(in_srgb,var(--color-paper)_76%,transparent)] p-4"
+                >
+                  <strong className="block text-[15px] tracking-[-0.03em]">
+                    {s.title}
+                  </strong>
+                  <span className="mt-[5px] block text-[13px] text-soft">
+                    {s.text}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <VisualCard />
+          </div>
         </div>
       </section>
       <Section
