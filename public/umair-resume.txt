@@ -1,0 +1,22 @@
+Umair Haider Hashmi
+Web Developer
+
+Focus
+- Custom WordPress websites
+- Responsive frontend development
+- Modern website UI implementation
+- Website cleanup, polish, and practical improvements
+
+Core Skills
+- HTML, CSS, JavaScript
+- WordPress theme/template work
+- React, Next.js, TypeScript
+- Tailwind CSS
+- Responsive design
+- SEO and performance foundations
+
+Contact
+Email: add-your-email@example.com
+Website: umairdev.com
+GitHub: add-your-github-url
+LinkedIn: add-your-linkedin-url

@@ -1,26 +1,131 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ---- Colors (light) ---- */
+  --color-bg: #f6f9ff;
+  --color-bg-2: #e8f0ff;
+  --color-paper: #ffffff;
+  --color-paper-2: #eef5ff;
+  --color-ink: #0b1220;
+  --color-muted: #4b5d75;
+  --color-soft: #71839b;
+  --color-line: rgba(15, 23, 42, 0.12);
+  --color-line-strong: rgba(15, 23, 42, 0.2);
+  --color-brand: #2563eb;
+  --color-brand-2: #0891b2;
+  --color-brand-3: #7c3aed;
+
+  /* ---- Fonts (layout.tsx ke variables se aate hain) ---- */
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), Consolas, monospace;
+
+  /* ---- Radius & shadow ---- */
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 34px;
+  --shadow-soft: 0 24px 80px rgba(30, 64, 175, 0.13);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ---- Dark overrides (next-themes html.dark pe yeh chalega) ---- */
+.dark {
+  --color-bg: #050b18;
+  --color-bg-2: #0b1220;
+  --color-paper: #101827;
+  --color-paper-2: #132033;
+  --color-ink: #f8fbff;
+  --color-muted: #c5d1e1;
+  --color-soft: #8ca0b8;
+  --color-line: rgba(226, 232, 240, 0.12);
+  --color-line-strong: rgba(226, 232, 240, 0.2);
+  --color-brand: #60a5fa;
+  --color-brand-2: #22d3ee;
+  --color-brand-3: #a78bfa;
+  --shadow-soft: 0 24px 90px rgba(0, 0, 0, 0.38);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-bg text-ink antialiased;
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background:
+      radial-gradient(
+        circle at 12% 0%,
+        color-mix(in srgb, var(--color-brand) 18%, transparent),
+        transparent 30rem
+      ),
+      radial-gradient(
+        circle at 88% 18%,
+        color-mix(in srgb, var(--color-brand-2) 20%, transparent),
+        transparent 28rem
+      ),
+      linear-gradient(180deg, var(--color-bg), var(--color-bg-2));
+  }
+
+  body::before {
+    pointer-events: none;
+    content: "{ }  </>  const  function  npm  git  deploy  React  Next.js  CSS  API";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    color: var(--color-line-strong);
+    font-family: var(--font-mono);
+    font-size: clamp(42px, 8vw, 108px);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.9;
+    opacity: 0.18;
+    transform: rotate(-8deg) translate(-8%, -8%);
+    white-space: pre-wrap;
+    word-spacing: 0.7em;
+    mask-image: linear-gradient(to bottom, black, transparent 76%);
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  ol {
+    @apply m-0;
+  }
+
+  h1 em,
+  h2 em,
+  h3 em {
+    @apply text-brand not-italic;
+  }
+
+  img,
+  svg {
+    @apply block max-w-full;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes float-code {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-4deg);
+  }
+  50% {
+    transform: translate3d(18px, -22px, 0) rotate(4deg);
+  }
 }
