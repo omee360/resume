@@ -1,12 +1,19 @@
-import { PageHeader } from "@/components/ui/page-header";
+import { Container } from "@/components/ui/container";
+import { PageHero } from "@/components/ui/page-hero";
 
 export default function ContactPage() {
   return (
-    <PageHeader title="Contact Me">
-      <p>
-        You can contact me for portfolio projects, WordPress work, and web
-        development.
-      </p>
-    </PageHeader>
+    <Container>
+      <PageHero
+        kicker="Contact"
+        title={
+          <>
+            Let’s discuss a <em>website, role, or project</em>.
+          </>
+        }
+        copy="Use this page for project inquiries, frontend/WordPress opportunities, collaborations, or direct hiring conversations."
+      />
+      {/* Full contact form + details aa rahe hain Phase 5 mein (Resend + Server Actions) */}
+    </Container>
   );
 }
