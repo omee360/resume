@@ -4,7 +4,7 @@ import "./globals.css";
 import { AmbientCode } from "@/components/layout/ambient-code";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,10 +34,12 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col">
-        <AmbientCode />
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <AmbientCode />
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

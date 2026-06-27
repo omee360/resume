@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const links = [
   { href: "/", label: "Home" },
@@ -40,13 +41,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-[10px]">
-            <button
-              type="button"
-              aria-label="Toggle theme"
-              className="grid h-10 w-10 place-items-center rounded-full border border-line bg-paper text-ink"
-            >
-              ◐
-            </button>
+            <ThemeToggle />
           </div>
         </nav>
       </Container>
