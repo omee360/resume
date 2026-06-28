@@ -6,6 +6,8 @@ type ButtonProps = {
   href?: string;
   type?: "button" | "submit";
   download?: boolean;
+  className?: string;
+  disabled?: boolean;
 };
 
 const base =
@@ -24,8 +26,10 @@ export function Button({
   href,
   type = "button",
   download,
+  className = "",
+  disabled,
 }: ButtonProps) {
-  const classes = `${base} ${variants[variant]}`;
+  const classes = `${base} ${variants[variant]} ${className}`;
 
   if (href) {
     return (
@@ -36,7 +40,7 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes}>
+    <button type={type} disabled={disabled} className={classes}>
       {children}
     </button>
   );
