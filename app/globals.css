@@ -138,3 +138,29 @@
 @keyframes spin {
   to { rotate: 360deg; }
 }
+
+@layer components {
+  figure[data-rehype-pretty-code-figure] {
+    @apply my-6 overflow-hidden rounded-lg border border-line bg-paper shadow-[0_18px_60px_rgba(0,0,0,0.04)];
+  }
+
+  figure[data-rehype-pretty-code-figure] pre {
+    @apply overflow-x-auto bg-[color-mix(in_srgb,var(--color-paper-2)_88%,transparent)] px-0 py-4 text-[13px] leading-[1.75];
+  }
+
+  figure[data-rehype-pretty-code-figure] code {
+    @apply grid min-w-full font-mono;
+  }
+
+  figure[data-rehype-pretty-code-figure] [data-line] {
+    @apply px-4;
+  }
+
+  figure[data-rehype-pretty-code-figure] [data-highlighted-line] {
+    @apply border-l-2 border-brand bg-[color-mix(in_srgb,var(--color-brand)_12%,transparent)];
+  }
+
+  :not(pre) > code {
+    @apply rounded-md border border-line bg-paper-2 px-1.5 py-0.5 font-mono text-[0.9em] text-ink;
+  }
+}

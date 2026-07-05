@@ -1,0 +1,58 @@
+export const metadata = {
+  title: "How I think about components while building a portfolio",
+  category: "Next.js",
+  excerpt:
+    "A practical note on reusable UI, data-driven sections, and avoiding premature abstractions.",
+  date: "2026-07-05",
+};
+
+Components are not only a React feature. They are a way to think about repeated interface patterns.
+
+A portfolio is a good place to practice this because the same ideas appear in many places: cards, buttons, sections, page heroes, and lists.
+
+<PostImage
+  src="/blog/component-system.svg"
+  alt="A component system illustration showing reusable cards and data blocks"
+  width={1200}
+  height={675}
+/>
+
+## Start with the page
+
+Before extracting a component, it helps to build one clear version of the section. This keeps the design honest because the component comes from a real need.
+
+If a pattern appears again, then it becomes a candidate for reuse.
+
+## Reuse structure, not everything
+
+A reusable component should keep the stable parts and leave flexible parts open. For example, a card might control border, radius, padding, and hover behavior, but the content inside can stay flexible.
+
+This keeps the component useful without making it too complicated.
+
+## Data-driven sections stay easier to edit
+
+When content is stored in an array and rendered with `.map()`, the UI becomes easier to extend.
+
+```tsx {2-5}
+const projects = [
+  {
+    title: "Portfolio website",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+  },
+];
+
+{projects.map((project) => (
+  <ProjectCard key={project.title} project={project} />
+))}
+```
+
+- Add one object for a new project.
+- Add one tag to a tags array.
+- Change copy without touching the layout.
+- Keep repeated markup in one place.
+
+## Avoid premature abstractions
+
+Not every repeated line needs a component immediately. A good component should make the code easier to understand, not harder.
+
+The best time to extract is usually after the pattern is repeated and the shape is clear.

@@ -4,11 +4,6 @@ import { useActionState } from "react";
 import { Button } from "@/components/ui/button";
 import { sendMessage } from "@/app/contact/actions";
 
-type FormState = {
-  errors?: Record<string, string>;
-  success?: boolean;
-};
-
 export function ContactForm() {
   const [state, formAction, isPending] = useActionState(sendMessage, {});
 

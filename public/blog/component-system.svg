@@ -1,0 +1,32 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Component system illustration</title>
+  <desc id="desc">A stylized portfolio component system with cards, tokens, and mapped data blocks.</desc>
+  <rect width="1200" height="675" rx="42" fill="#07111f"/>
+  <circle cx="1020" cy="104" r="220" fill="#2563eb" opacity="0.28"/>
+  <circle cx="214" cy="586" r="260" fill="#0891b2" opacity="0.22"/>
+  <path d="M118 128C118 105.909 135.909 88 158 88H1042C1064.09 88 1082 105.909 1082 128V547C1082 569.091 1064.09 587 1042 587H158C135.909 587 118 569.091 118 547V128Z" fill="#101827" stroke="#334155" stroke-width="2"/>
+  <rect x="166" y="146" width="284" height="82" rx="22" fill="#132033" stroke="#475569"/>
+  <rect x="492" y="146" width="214" height="82" rx="22" fill="#132033" stroke="#475569"/>
+  <rect x="748" y="146" width="284" height="82" rx="22" fill="#132033" stroke="#475569"/>
+  <text x="198" y="196" fill="#60a5fa" font-family="JetBrains Mono, Consolas, monospace" font-size="28" font-weight="800">&lt;PageHero /&gt;</text>
+  <text x="532" y="196" fill="#22d3ee" font-family="JetBrains Mono, Consolas, monospace" font-size="28" font-weight="800">tokens</text>
+  <text x="786" y="196" fill="#a78bfa" font-family="JetBrains Mono, Consolas, monospace" font-size="28" font-weight="800">posts.map()</text>
+  <rect x="166" y="286" width="248" height="192" rx="28" fill="#0f172a" stroke="#334155"/>
+  <rect x="476" y="286" width="248" height="192" rx="28" fill="#0f172a" stroke="#334155"/>
+  <rect x="786" y="286" width="248" height="192" rx="28" fill="#0f172a" stroke="#334155"/>
+  <rect x="202" y="328" width="92" height="14" rx="7" fill="#60a5fa"/>
+  <rect x="202" y="366" width="156" height="18" rx="9" fill="#e2e8f0" opacity="0.9"/>
+  <rect x="202" y="408" width="176" height="12" rx="6" fill="#94a3b8"/>
+  <rect x="202" y="434" width="132" height="12" rx="6" fill="#94a3b8" opacity="0.75"/>
+  <rect x="512" y="328" width="92" height="14" rx="7" fill="#22d3ee"/>
+  <rect x="512" y="366" width="156" height="18" rx="9" fill="#e2e8f0" opacity="0.9"/>
+  <rect x="512" y="408" width="176" height="12" rx="6" fill="#94a3b8"/>
+  <rect x="512" y="434" width="132" height="12" rx="6" fill="#94a3b8" opacity="0.75"/>
+  <rect x="822" y="328" width="92" height="14" rx="7" fill="#a78bfa"/>
+  <rect x="822" y="366" width="156" height="18" rx="9" fill="#e2e8f0" opacity="0.9"/>
+  <rect x="822" y="408" width="176" height="12" rx="6" fill="#94a3b8"/>
+  <rect x="822" y="434" width="132" height="12" rx="6" fill="#94a3b8" opacity="0.75"/>
+  <path d="M450 382H476" stroke="#60a5fa" stroke-width="4" stroke-linecap="round"/>
+  <path d="M724 382H786" stroke="#22d3ee" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <text x="166" y="532" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">One data source, repeated UI, consistent design.</text>
+</svg>
