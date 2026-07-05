@@ -10,15 +10,24 @@ export function ContactForm() {
   return (
     <form
       action={formAction}
-      className="grid gap-[14px] rounded-xl border border-line bg-[color-mix(in_srgb,var(--color-paper)_86%,transparent)] p-[26px] shadow-soft"
+      className="grid gap-3 rounded-xl border border-line bg-[color-mix(in_srgb,var(--color-paper)_86%,transparent)] p-5 shadow-soft md:p-6"
     >
-      <label className="grid gap-2 text-[13px] font-black text-muted">
+      <div className="mb-2">
+        <p className="font-mono text-[12px] font-black uppercase tracking-[0.08em] text-brand">
+          Send a message
+        </p>
+        <h2 className="mt-2 text-[24px] font-semibold tracking-[-0.02em] text-ink">
+          Tell me what you need.
+        </h2>
+      </div>
+
+      <label className="grid gap-1.5 text-[13px] font-black text-muted">
         Name
         <input
           type="text"
           name="name"
           placeholder="Your name"
-          className="w-full rounded-[15px] border border-line bg-bg px-[14px] py-[13px] text-ink"
+          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink outline-none transition focus:border-brand"
         />
       </label>
       {state.errors?.name && (
@@ -36,13 +45,13 @@ export function ContactForm() {
         className="hidden"
       />
 
-      <label className="grid gap-2 text-[13px] font-black text-muted">
+      <label className="grid gap-1.5 text-[13px] font-black text-muted">
         Email
         <input
           type="email"
           name="email"
           placeholder="you@example.com"
-          className="w-full rounded-[15px] border border-line bg-bg px-[14px] py-[13px] text-ink"
+          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink outline-none transition focus:border-brand"
         />
       </label>
       {state.errors?.email && (
@@ -51,22 +60,22 @@ export function ContactForm() {
         </p>
       )}
 
-      <label className="grid gap-2 text-[13px] font-black text-muted">
+      <label className="grid gap-1.5 text-[13px] font-black text-muted">
         Project type
         <input
           type="text"
           name="type"
-          placeholder="WordPress website, frontend work, existing site cleanup..."
-          className="w-full rounded-[15px] border border-line bg-bg px-[14px] py-[13px] text-ink"
+          placeholder="Website, app, WordPress, role..."
+          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink outline-none transition focus:border-brand"
         />
       </label>
 
-      <label className="grid gap-2 text-[13px] font-black text-muted">
+      <label className="grid gap-1.5 text-[13px] font-black text-muted">
         Message
         <textarea
           name="message"
-          placeholder="Share the website link, business goal, timeline, and what you need improved or built."
-          className="min-h-[150px] w-full resize-y rounded-[15px] border border-line bg-bg px-[14px] py-[13px] text-ink"
+          placeholder="Share the goal, link, timeline, or role details."
+          className="min-h-[120px] w-full resize-y rounded-[14px] border border-line bg-bg px-3.5 py-3 text-[15px] text-ink outline-none transition focus:border-brand"
         />
       </label>
       {state.errors?.message && (
