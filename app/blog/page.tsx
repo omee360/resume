@@ -10,10 +10,10 @@ export default function BlogPage() {
         kicker="Writing"
         title={
           <>
-            Notes on building better <em>websites</em>.
+            Notes on <em>modern web development and engineering</em>.
           </>
         }
-        copy="Blog posts can strengthen the profile by showing communication and technical thinking. The content should stay practical: WordPress fixes, frontend lessons, Next.js notes, and website improvement guides."
+        copy="Articles about React, Next.js, full-stack development, performance, cloud technologies, and lessons from building real-world projects."
       />
 
       <section className="grid gap-[18px] pb-20 md:grid-cols-3">

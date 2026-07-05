@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Umair Haider Hashmi for WordPress development, frontend implementation, website improvements, and professional web development opportunities.",
+    "Contact Umair Haider Hashmi, Full-Stack Developer specializing in React, Next.js, Node.js, and modern web application development.",
 };
 
 export default function ContactPage() {

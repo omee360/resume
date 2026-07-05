@@ -15,16 +15,16 @@ export const metadata: Metadata = {
 
 const signals = [
   {
-    title: "Experienced web background",
-    text: "Years of hands-on IT and website work, now focused on full-stack web development.",
+    title: "9+ years web experience",
+    text: "Building and delivering production websites and applications across modern web technologies.",
   },
   {
     title: "Frontend + backend thinking",
     text: "Responsive UI, data flow, forms, validation, server actions, APIs, and practical architecture.",
   },
   {
-    title: "Modern JavaScript stack",
-    text: "React, Next.js, TypeScript, Tailwind, WordPress, and full-stack JavaScript training.",
+    title: "Modern JavaScript ecosystem",
+    text: "React, Next.js, TypeScript, Node.js, APIs, databases, and modern deployment workflows.",
   },
 ];
 
@@ -53,7 +53,7 @@ const services = [
   },
   {
     title: "For agencies",
-    text: "Reliable WordPress and frontend implementation support for layouts, sections, landing pages, and client website updates.",
+    text: "Reliable development support for modern websites, applications, frontend systems, and client solutions.",
   },
   {
     title: "For teams",
@@ -87,10 +87,10 @@ export default function Home() {
               <Typewriter
                 words={[
                   "Umair.",
-                  "a full-stack developer.",
-                  "a frontend developer.",
-                  "a JavaScript developer.",
-                  "a WordPress developer.",
+                  "Full-stack developer.",
+                  "Next.js developer.",
+                  "JavaScript developer.",
+                  "WordPress developer.",
                 ]}
               />
             </h1>
@@ -110,11 +110,10 @@ export default function Home() {
             </p>
 
             <p className="mt-4 max-w-[620px] text-[clamp(16px,1.35vw,18px)] leading-[1.75] text-muted">
-              I am a full-stack web developer with a strong IT and website
-              background. I work across modern JavaScript, React, Next.js,
-              TypeScript, Tailwind CSS, server-side form handling, APIs, and
-              WordPress systems. I care about structure, usability, performance,
-              and websites that solve real business problems.
+              I’m a Full-Stack Developer with 9+ years of web development
+              experience, building modern applications with React, Next.js,
+              Node.js, and cloud technologies. I focus on creating fast,
+              scalable, and maintainable digital products.
             </p>
 
             <div className="mt-[34px] flex flex-wrap gap-[13px]">
@@ -149,7 +148,8 @@ export default function Home() {
         kicker="Capabilities"
         title={
           <>
-            Full-stack website work built for <em>real use</em>, not just screenshots.
+            Full-stack website work built for <em>real use</em>, not just
+            screenshots.
           </>
         }
         copy="The goal is simple: a website or web app should look professional, load well, handle real user actions, explain the business clearly, work on mobile, and stay manageable after launch."
@@ -189,10 +189,9 @@ export default function Home() {
             Full-stack learning that supports hands-on experience.
           </h3>
           <p className="mt-3 max-w-[760px] text-muted">
-            Certificates are not the whole story, but they show continuous
-            learning across JavaScript, frontend development, full-stack web
-            development, and WordPress while I keep building practical website
-            skills.
+            Professional development through industry-focused programs covering
+            full-stack JavaScript, cloud-native development, DevOps, and modern
+            engineering practices.
           </p>
           <ul className="mt-5 flex list-none flex-wrap gap-2 p-0">
             {credentials.map((credential) => (
