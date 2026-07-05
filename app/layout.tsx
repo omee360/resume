@@ -17,9 +17,24 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Umair Haider Hashmi — Web Developer",
+  metadataBase: new URL("https://umairdev.com"),
+  title: {
+    default: "Umair Haider Hashmi | Full-Stack Web Developer",
+    template: "%s | Umair Haider Hashmi",
+  },
   description:
-    "Portfolio of Umair, a web developer building clean WordPress and modern frontend websites.",
+    "Umair Haider Hashmi is a full-stack web developer building professional websites and web applications with JavaScript, React, Next.js, TypeScript, WordPress, and practical backend fundamentals.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Umair Haider Hashmi | Full-Stack Web Developer",
+    description:
+      "Professional full-stack websites and web applications with React, Next.js, TypeScript, WordPress, and maintainable website systems for real business use.",
+    url: "/",
+    siteName: "UmairDev",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

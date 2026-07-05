@@ -1,11 +1,18 @@
 Umair Haider Hashmi
-Web Developer
+WordPress & Frontend Developer
+
+Website
+umairdev.com
+
+Professional Summary
+Web developer with years of hands-on IT and website experience, focused on custom WordPress development, responsive frontend implementation, and practical website systems for businesses, agencies, and teams. Strong background in HTML, CSS, JavaScript, WordPress theme/template work, and modern frontend learning with React, Next.js, TypeScript, and Tailwind CSS.
 
 Focus
-- Custom WordPress websites
-- Responsive frontend development
-- Modern website UI implementation
-- Website cleanup, polish, and practical improvements
+- Custom WordPress websites and theme/template work
+- Responsive frontend development with clean HTML, CSS, and JavaScript
+- Modern website UI implementation using React, Next.js, TypeScript, and Tailwind CSS
+- Website cleanup, redesign support, mobile polish, and practical improvements
+- Maintainable content sections, clear structure, and client-friendly websites
 
 Core Skills
 - HTML, CSS, JavaScript
@@ -14,9 +21,23 @@ Core Skills
 - Tailwind CSS
 - Responsive design
 - SEO and performance foundations
+- Website content structure
+- Practical IT and website support experience
+
+Professional Development
+- WordPress development certificate
+- Scrimba frontend training
+- Coursera full-stack JavaScript / web development learning
+
+Certificate Links
+- Coursera: https://coursera.org/share/3127d7c68066f59c955692a18818bf35
+- Coursera: https://coursera.org/share/22c7bc46b95a84a50c19f6773fe91fee
+- Coursera: https://coursera.org/share/4689df8b844009270e95db3c46e9642f
 
 Contact
-Email: add-your-email@example.com
+Primary Email: umair@umairdev.com
+Alternate Email: umairhaider360@gmail.com
+WhatsApp: +92 334 9816823
 Website: umairdev.com
-GitHub: add-your-github-url
-LinkedIn: add-your-linkedin-url
+GitHub: https://github.com/omee360
+LinkedIn: https://www.linkedin.com/in/umair-haider-hashmi/

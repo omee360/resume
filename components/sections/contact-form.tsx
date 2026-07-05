@@ -56,7 +56,7 @@ export function ContactForm() {
         <input
           type="text"
           name="type"
-          placeholder="Website, WordPress, frontend role..."
+          placeholder="WordPress website, frontend work, existing site cleanup..."
           className="w-full rounded-[15px] border border-line bg-bg px-[14px] py-[13px] text-ink"
         />
       </label>
@@ -65,7 +65,7 @@ export function ContactForm() {
         Message
         <textarea
           name="message"
-          placeholder="Tell me what you need"
+          placeholder="Share the website link, business goal, timeline, and what you need improved or built."
           className="min-h-[150px] w-full resize-y rounded-[15px] border border-line bg-bg px-[14px] py-[13px] text-ink"
         />
       </label>
@@ -77,7 +77,7 @@ export function ContactForm() {
 
       {state.success && (
         <p className="text-[13px] font-bold text-green-600">
-          Thanks! Your message has been sent — I&apos;ll get back to you soon.
+          Thanks! Your message has been sent. I&apos;ll get back to you soon.
         </p>
       )}
 

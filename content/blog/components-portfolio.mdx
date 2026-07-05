@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "How I think about components while building a portfolio",
+  title: "How component thinking helps build maintainable websites",
   category: "Next.js",
   excerpt:
-    "A practical note on reusable UI, data-driven sections, and avoiding premature abstractions.",
+    "A practical note on reusable UI, data-driven sections, and keeping modern frontend code understandable.",
   date: "2026-07-05",
 };
 
-Components are not only a React feature. They are a way to think about repeated interface patterns.
+Components are not only a React feature. They are a way to think about repeated interface patterns: buttons, cards, page sections, navigation, forms, and content blocks.
 
-A portfolio is a good place to practice this because the same ideas appear in many places: cards, buttons, sections, page heroes, and lists.
+This thinking is useful beyond a portfolio. Any business website becomes easier to maintain when repeated UI patterns are built consistently instead of being rewritten slightly differently on every page.
 
 <PostImage
   src="/blog/component-system.svg"
@@ -19,15 +19,19 @@ A portfolio is a good place to practice this because the same ideas appear in ma
 
 ## Start with the page
 
-Before extracting a component, it helps to build one clear version of the section. This keeps the design honest because the component comes from a real need.
+Before extracting a component, it helps to build one clear version of the section. This keeps the design honest because the component comes from a real need, not from guessing too early.
 
 If a pattern appears again, then it becomes a candidate for reuse.
+
+This is similar to WordPress section work: first understand the real content pattern, then create a reusable structure around it.
 
 ## Reuse structure, not everything
 
 A reusable component should keep the stable parts and leave flexible parts open. For example, a card might control border, radius, padding, and hover behavior, but the content inside can stay flexible.
 
 This keeps the component useful without making it too complicated.
+
+Good components reduce repeated decisions. They do not remove judgment. The page still needs strong content, correct hierarchy, and layout choices that match the purpose.
 
 ## Data-driven sections stay easier to edit
 
@@ -51,8 +55,10 @@ const projects = [
 - Change copy without touching the layout.
 - Keep repeated markup in one place.
 
+That kind of structure matters when a website grows. Instead of editing repeated markup in multiple places, the developer can update content data while the visual system stays consistent.
+
 ## Avoid premature abstractions
 
 Not every repeated line needs a component immediately. A good component should make the code easier to understand, not harder.
 
-The best time to extract is usually after the pattern is repeated and the shape is clear.
+The best time to extract is usually after the pattern is repeated and the shape is clear. That balance is important: modern tools are powerful, but the goal is still a website that is easy to understand, ship, and maintain.
