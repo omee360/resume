@@ -25,15 +25,15 @@ export function VisualCard() {
         </div>
       ))}
       <div className="absolute left-7 top-[34px] z-[3] max-w-[205px] rounded-[18px] border border-line-strong bg-paper p-[14px] shadow-soft">
-        <strong className="block text-[13px]">Design systems</strong>
+        <strong className="block text-[13px]">Component Systems</strong>
         <span className="mt-1 block text-[12px] text-soft">
-          Reusable sections, readable layouts, consistent UI patterns.
+          Reusable components, clean structure, consistent application patterns.
         </span>
       </div>
       <div className="absolute right-[26px] top-[42%] z-[3] max-w-[205px] rounded-[18px] border border-line-strong bg-paper p-[14px] shadow-soft">
-        <strong className="block text-[13px]">Production mindset</strong>
+        <strong className="block text-[13px]">Production Mindset</strong>
         <span className="mt-1 block text-[12px] text-soft">
-          Clean structure, responsive behavior, and handoff-friendly code.
+          Maintainable code, performance-focused builds, and scalable solutions.
         </span>
       </div>
 

@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Full-Stack Web Developer",
   description:
-    "Umair Haider Hashmi is a full-stack web developer building professional websites and web applications with JavaScript, React, Next.js, TypeScript, WordPress, and modern backend fundamentals.",
+    "Umair Haider Hashmi is a Full-Stack Developer with 9+ years of experience building web applications, custom WordPress solutions, and scalable digital products using React, Next.js, TypeScript, Node.js, and cloud technologies.",
 };
 
 const signals = [
@@ -19,30 +19,30 @@ const signals = [
     text: "Building and delivering production websites and applications across modern web technologies.",
   },
   {
-    title: "Frontend + backend thinking",
-    text: "Responsive UI, data flow, forms, validation, server actions, APIs, and practical architecture.",
+    title: "Frontend + Backend Development",
+    text: "Building user interfaces, APIs, authentication flows, server logic, and complete application features.",
   },
   {
     title: "Modern JavaScript ecosystem",
-    text: "React, Next.js, TypeScript, Node.js, APIs, databases, and modern deployment workflows.",
+    text: "React, Next.js, TypeScript, Node.js, Express, APIs, databases, and modern deployment workflows.",
   },
 ];
 
 const capabilities = [
   {
     number: "01",
-    title: "Full-stack web development",
-    text: "Professional websites and web applications with frontend UI, backend logic, form handling, validation, routing, content structure, and deployment-ready thinking.",
+    title: "Full-Stack Web Development",
+    text: "Modern websites and applications with frontend interfaces, backend functionality, APIs, databases, authentication, and deployment-ready architecture.",
   },
   {
     number: "02",
-    title: "Frontend implementation",
-    text: "Clean HTML, CSS, JavaScript, React, Next.js, and Tailwind work with strong spacing, clear hierarchy, accessible interactions, and mobile-first polish.",
+    title: "Frontend Engineering",
+    text: "Building responsive, accessible, and high-performance interfaces with React, Next.js, TypeScript, Tailwind CSS, reusable components, and modern frontend practices.",
   },
   {
     number: "03",
-    title: "WordPress and existing sites",
-    text: "Custom WordPress work, theme/template improvements, website cleanup, content-section polish, and modernization for sites that need stronger structure.",
+    title: "CMS & WordPress Engineering",
+    text: "Building custom WordPress solutions, improving existing websites, integrating modern workflows, and delivering maintainable client projects.",
   },
 ];
 
@@ -57,21 +57,21 @@ const services = [
   },
   {
     title: "For teams",
-    text: "A developer who understands real support, communication, deadlines, and practical website work beyond just writing code.",
+    text: "A developer who understands real support, communication, deadlines, and practical development work beyond just writing code.",
   },
 ];
 
 const credentials = [
   {
-    title: "IBM JavaScript Full Stack Developer",
+    title: "IBM Fullstack JavaScript Developer",
     href: "https://coursera.org/share/3127d7c68066f59c955692a18818bf35",
   },
   {
-    title: "Coursera web development certificate",
+    title: "Fullstack Development - Scrimba",
     href: "https://coursera.org/share/22c7bc46b95a84a50c19f6773fe91fee",
   },
   {
-    title: "Coursera JavaScript certificate",
+    title: "WordPress Development",
     href: "https://coursera.org/share/4689df8b844009270e95db3c46e9642f",
   },
 ];
@@ -87,10 +87,10 @@ export default function Home() {
               <Typewriter
                 words={[
                   "Umair.",
-                  "Full-stack developer.",
-                  "Next.js developer.",
-                  "JavaScript developer.",
-                  "WordPress developer.",
+                  "Full-Stack Developer.",
+                  "Next.js Developer.",
+                  "JavaScript Developer.",
+                  "WordPress Developer.",
                 ]}
               />
             </h1>
@@ -101,19 +101,21 @@ export default function Home() {
 
             <div className="mt-[22px] inline-flex items-center gap-[9px] rounded-full border border-line bg-[color-mix(in_srgb,var(--color-paper)_84%,transparent)] px-3 py-2 text-[13px] font-extrabold text-muted">
               <span className="h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_0_6px_rgba(34,197,94,0.14)]" />
-              Available for full-stack, frontend, WordPress, and website work
+              Available for full-stack development, modern web apps, and custom
+              WordPress projects
             </div>
 
             <p className="mt-[18px] max-w-[720px] text-[clamp(24px,3vw,38px)] font-semibold leading-[1.18] tracking-[-0.02em] text-ink">
-              I build professional websites and web applications with clean UI,
-              practical backend logic, and maintainable full-stack structure.
+              I build modern websites and applications with clean interfaces,
+              scalable architecture, and reliable full-stack development
+              practices.
             </p>
 
             <p className="mt-4 max-w-[620px] text-[clamp(16px,1.35vw,18px)] leading-[1.75] text-muted">
-              I’m a Full-Stack Developer with 9+ years of web development
-              experience, building modern applications with React, Next.js,
-              Node.js, and cloud technologies. I focus on creating fast,
-              scalable, and maintainable digital products.
+              I'm a Full-Stack Developer with 9+ years of experience building
+              modern web applications and custom WordPress solutions using
+              React, Next.js, TypeScript, Node.js, and cloud-ready development
+              practices.
             </p>
 
             <div className="mt-[34px] flex flex-wrap gap-[13px]">
@@ -148,11 +150,11 @@ export default function Home() {
         kicker="Capabilities"
         title={
           <>
-            Full-stack website work built for <em>real use</em>, not just
+            Full-stack development built for <em>real use</em>, not just
             screenshots.
           </>
         }
-        copy="The goal is simple: a website or web app should look professional, load well, handle real user actions, explain the business clearly, work on mobile, and stay manageable after launch."
+        copy="The goal is simple: a website or application should look professional, perform well, handle real user interactions, provide a smooth experience, work across devices, and stay maintainable after launch."
       >
         <div className="grid grid-cols-1 gap-[18px] md:grid-cols-3">
           {capabilities.map((c) => (
@@ -166,7 +168,7 @@ export default function Home() {
       <Section
         kicker="Work style"
         title="For businesses, agencies, and teams."
-        copy="I can help with full-stack website builds, React/Next.js interfaces, forms and server-side flows, WordPress implementation, content-section cleanup, and modernizing older websites without overcomplicating the system."
+        copy="I can help with full-stack website builds, React/Next.js interfaces, forms and server-side flows, custom WordPress development, performance improvements, and modernizing older websites without overcomplicating the system."
       >
         <div className="grid gap-px overflow-hidden rounded-xl bg-line md:grid-cols-3">
           {services.map((s) => (
@@ -186,7 +188,7 @@ export default function Home() {
         <div className="mt-[30px] rounded-lg border border-line bg-[color-mix(in_srgb,var(--color-paper)_82%,transparent)] p-[22px] shadow-[0_18px_60px_rgba(0,0,0,0.04)]">
           <Kicker>Credentials</Kicker>
           <h3 className="mt-3 text-[22px] font-semibold tracking-[-0.012em]">
-            Full-stack learning that supports hands-on experience.
+            Professional growth backed by hands-on development experience.
           </h3>
           <p className="mt-3 max-w-[760px] text-muted">
             Professional development through industry-focused programs covering
@@ -213,12 +215,12 @@ export default function Home() {
           <div>
             <Kicker>Contact</Kicker>
             <h3 className="mt-3 text-[22px] font-semibold tracking-[-0.012em]">
-              Need a reliable website developer?
+              Need a reliable full-stack developer?
             </h3>
             <p className="mt-3 text-muted">
-              Send a message for full-stack web development, React/Next.js
-              frontend work, WordPress implementation, website cleanup, or a
-              developer role where practical website experience matters.
+              Send a message for full-stack development, React/Next.js
+              applications, custom WordPress solutions, performance
+              improvements, or modern web projects.
             </p>
           </div>
           <div className="flex flex-wrap gap-[13px]">
