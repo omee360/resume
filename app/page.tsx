@@ -112,7 +112,7 @@ export default function Home() {
             </p>
 
             <p className="mt-4 max-w-[620px] text-[clamp(16px,1.35vw,18px)] leading-[1.75] text-muted">
-              I'm a Full-Stack Developer with 9+ years of experience building
+              I&apos;m a Full-Stack Developer with 9+ years of experience building
               modern web applications and custom WordPress solutions using
               React, Next.js, TypeScript, Node.js, and cloud-ready development
               practices.
