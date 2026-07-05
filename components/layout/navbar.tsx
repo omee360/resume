@@ -21,10 +21,10 @@ export function Navbar() {
             className="mr-auto inline-flex items-center gap-3 font-extrabold tracking-tight"
             aria-label="Umair - home"
           >
-            <span className="grid h-[38px] w-[38px] place-items-center rounded-[14px] border border-line-strong bg-paper font-mono text-xs text-ink">
-              U
+            <span className="grid h-[38px] w-[100px] place-items-center rounded-[14px] border border-line-strong bg-paper font-mono text-xs text-ink">
+              { "<Umair />" }
             </span>
-            <span>Umair</span>
+            {/* <span>Umair</span> */}
           </Link>
 
           <div className="flex items-center gap-2 rounded-full border border-line bg-[color-mix(in_srgb,var(--color-paper)_78%,transparent)] p-[5px]">
