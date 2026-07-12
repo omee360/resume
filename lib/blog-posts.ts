@@ -1,23 +1,26 @@
-import { metadata as componentsPortfolio } from "@/content/blog/components-portfolio.mdx";
-import { metadata as professionalUiDetails } from "@/content/blog/professional-ui-details.mdx";
-import { metadata as wordpressMaintainable } from "@/content/blog/wordpress-maintainable.mdx";
+import { metadata as buildingFastWebsites } from "@/content/blog/building-fast-maintainable-websites.mdx";
+import { metadata as whyNextjsModernWebApplications } from "@/content/blog/why-nextjs-modern-web-applications.mdx";
+import { metadata as frontendBackendDevelopment } from "@/content/blog/frontend-backend-fullstack-development.mdx";
 
 export const blogPosts = [
   {
-    slug: "wordpress-maintainable",
-    metadata: wordpressMaintainable,
-    loadPost: () => import("@/content/blog/wordpress-maintainable.mdx"),
+    slug: "building-fast-maintainable-websites",
+    metadata: buildingFastWebsites,
+    loadPost: () =>
+      import("@/content/blog/building-fast-maintainable-websites.mdx"),
   },
   {
-    slug: "professional-ui-details",
-    metadata: professionalUiDetails,
-    loadPost: () => import("@/content/blog/professional-ui-details.mdx"),
+    slug: "why-nextjs-modern-web-applications",
+    metadata: whyNextjsModernWebApplications,
+    loadPost: () =>
+      import("@/content/blog/why-nextjs-modern-web-applications.mdx"),
   },
   {
-    slug: "components-portfolio",
-    metadata: componentsPortfolio,
-    loadPost: () => import("@/content/blog/components-portfolio.mdx"),
-  },
+    slug: "frontend-backend-fullstack-development",
+    metadata: frontendBackendDevelopment,
+    loadPost: () =>
+      import("@/content/blog/frontend-backend-fullstack-development.mdx"),
+  }
 ];
 
 export function getBlogPost(slug: string) {

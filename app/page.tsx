@@ -120,7 +120,7 @@ export default function Home() {
 
             <div className="mt-[34px] flex flex-wrap gap-[13px]">
               <Button href="/contact">Start a conversation</Button>
-              <Button href="/umair-resume.txt" variant="ghost" download>
+              <Button href="/Umair_Haider_Hashmi.pdf" variant="ghost" download>
                 Download resume
               </Button>
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-wrap gap-[13px]">
-            <Button href="/umair-resume.txt" download>
+            <Button href="/Umair_Haider_Hashmi.pdf" download>
               Download resume
             </Button>
             <Button href="/contact" variant="secondary">

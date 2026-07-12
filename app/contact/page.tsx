@@ -93,7 +93,7 @@ export default function ContactPage() {
             Download a short text resume with focus areas, skills, contact
             details, and certification links.
             <div className="mt-5 flex flex-wrap gap-[13px]">
-              <Button href="/umair-resume.txt" variant="secondary" download>
+              <Button href="/Umair_Haider_Hashmi.pdf" variant="secondary" download>
                 Download resume
               </Button>
             </div>
