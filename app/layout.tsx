@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { AmbientCode } from "@/components/layout/ambient-code";
 import { Navbar } from "@/components/layout/navbar";
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://umairdev.com"),
   title: {
     default: "Umair Haider Hashmi | Full-Stack Web Developer",
-    template: "%s | Umair Haider Hashmi",
+    template: "Umair Haider Hashmi | %s",
   },
   description:
     "Umair Haider Hashmi is a full-stack web developer building professional websites and web applications with JavaScript, React, Next.js, TypeScript, WordPress, and practical backend fundamentals.",
@@ -55,6 +56,11 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "ab7c5f8bed944a48a38d2ecb5a6bcc72"}'
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
