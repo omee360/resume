@@ -10,16 +10,28 @@ export function Footer() {
             developer.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="mailto:umair@umairdev.com" className="hover:text-ink">
+            <a
+              href="mailto:umair@umairdev.com"
+              className="rounded-sm hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+            >
               Email
             </a>
             <a
               href="https://www.linkedin.com/in/umair-haider-hashmi/"
-              className="hover:text-ink"
+              className="rounded-sm hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Umair Haider Hashmi's profile on LinkedIn"
             >
               LinkedIn
             </a>
-            <a href="https://github.com/omee360" className="hover:text-ink">
+            <a
+              href="https://github.com/omee360"
+              className="rounded-sm hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Umair Haider Hashmi's profile on GitHub"
+            >
               GitHub
             </a>
           </div>
