@@ -28,14 +28,14 @@ const components: MDXComponents = {
     </a>
   ),
   PostImage: ({ src, alt, width, height }) => (
-    <figure className="my-8 overflow-hidden rounded-lg border border-line bg-paper shadow-[0_18px_60px_rgba(0,0,0,0.04)]">
+    <figure className="my-6 max-w-full overflow-hidden rounded-lg border border-line bg-paper shadow-[0_18px_60px_rgba(0,0,0,0.04)] sm:my-8">
       <Image
         src={src}
         alt={alt}
         width={width}
         height={height}
         sizes="(max-width: 768px) 100vw, 720px"
-        className="h-auto w-full"
+        className="h-auto w-full max-w-full"
       />
     </figure>
   ),

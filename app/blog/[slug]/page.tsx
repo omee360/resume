@@ -77,11 +77,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       <section className="grid gap-7 pb-20 lg:grid-cols-[1fr_280px]">
-        <article className="rounded-xl border border-line bg-[color-mix(in_srgb,var(--color-paper)_82%,transparent)] p-[24px] text-muted shadow-[0_18px_60px_rgba(0,0,0,0.04)]">
+        <article className="min-w-0 rounded-xl border border-line bg-[color-mix(in_srgb,var(--color-paper)_82%,transparent)] p-4 text-muted shadow-[0_18px_60px_rgba(0,0,0,0.04)] sm:p-[24px]">
           <Post />
         </article>
 
-        <aside className="h-fit rounded-lg border border-line bg-paper p-[22px] text-[14px] text-muted shadow-[0_18px_60px_rgba(0,0,0,0.04)]">
+        <aside className="min-w-0 h-fit rounded-lg border border-line bg-paper p-4 text-[14px] text-muted shadow-[0_18px_60px_rgba(0,0,0,0.04)] sm:p-[22px]">
           <p className="font-mono text-[12px] font-black uppercase tracking-[0.08em] text-brand">
             Post details
           </p>

@@ -99,10 +99,12 @@ export default function Home() {
               Umair Haider Hashmi
             </p>
 
-            <div className="mt-[22px] inline-flex items-center gap-[9px] rounded-full border border-line bg-[color-mix(in_srgb,var(--color-paper)_84%,transparent)] px-3 py-2 text-[13px] font-extrabold text-muted">
-              <span className="h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_0_6px_rgba(34,197,94,0.14)]" />
-              Available for full-stack development, modern web apps, and custom
-              WordPress projects
+            <div className="mt-[22px] inline-flex max-w-full items-start gap-[10px] rounded-[18px] border border-line bg-[color-mix(in_srgb,var(--color-paper)_84%,transparent)] px-3 py-2 text-[13px] font-extrabold leading-[1.45] text-muted">
+              <span className="mt-[0.42em] h-2 w-2 shrink-0 rounded-full bg-[#22c55e] shadow-[0_0_0_6px_rgba(34,197,94,0.14)]" />
+              <span>
+                Available for full-stack development, modern web apps, and
+                custom WordPress projects
+              </span>
             </div>
 
             <p className="mt-[18px] max-w-[720px] text-[clamp(24px,3vw,38px)] font-semibold leading-[1.18] tracking-[-0.02em] text-ink">
@@ -112,10 +114,10 @@ export default function Home() {
             </p>
 
             <p className="mt-4 max-w-[620px] text-[clamp(16px,1.35vw,18px)] leading-[1.75] text-muted">
-              I&apos;m a Full-Stack Developer with 9+ years of experience building
-              modern web applications and custom WordPress solutions using
-              React, Next.js, TypeScript, Node.js, and cloud-ready development
-              practices.
+              I&apos;m a Full-Stack Developer with 9+ years of experience
+              building modern web applications and custom WordPress solutions
+              using React, Next.js, TypeScript, Node.js, and cloud-ready
+              development practices.
             </p>
 
             <div className="mt-[34px] flex flex-wrap gap-[13px]">
