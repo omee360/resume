@@ -8,7 +8,6 @@ import { VisualCard } from "@/components/sections/visual-card";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Full-Stack Web Developer",
   description:
     "Umair Haider Hashmi is a Full-Stack Developer with 9+ years of experience building web applications, custom WordPress solutions, and scalable digital products using React, Next.js, TypeScript, Node.js, and cloud technologies.",
 };
