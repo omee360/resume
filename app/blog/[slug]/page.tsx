@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -16,6 +17,39 @@ type BlogPostPageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
+
+  if (!post) {
+    return {
+      title: "Post not found",
+    };
+  }
+
+  const { metadata } = post;
+  const url = `/blog/${post.slug}`;
+
+  return {
+    title: metadata.title,
+    description: metadata.excerpt,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: metadata.title,
+      description: metadata.excerpt,
+      url,
+      siteName: "Umair",
+      type: "article",
+      publishedTime: metadata.date,
+      authors: ["Umair Haider Hashmi"],
+    },
+  };
+}
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;

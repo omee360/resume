@@ -1,7 +1,25 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { blogPosts } from "@/lib/blog-posts";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Technical articles by Umair Haider Hashmi covering modern web development, full-stack engineering, software architecture, web performance, and related technologies.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Blog | Umair Haider Hashmi",
+    description:
+      "Technical articles on modern web development, full-stack engineering, software architecture, web performance, and related technologies.",
+    url: "/blog",
+    siteName: "Umair",
+    type: "website",
+  },
+};
 
 export default function BlogPage() {
   return (

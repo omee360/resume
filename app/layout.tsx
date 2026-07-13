@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Professional full-stack websites and web applications with React, Next.js, TypeScript, WordPress, and maintainable website systems for real business use.",
     url: "/",
-    siteName: "UmairDev",
+    siteName: "Umair",
     type: "website",
   },
 };
