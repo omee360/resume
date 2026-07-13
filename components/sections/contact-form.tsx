@@ -27,7 +27,7 @@ export function ContactForm() {
           type="text"
           name="name"
           placeholder="Your name"
-          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink outline-none transition focus:border-brand"
+          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink font-normal placeholder:text-soft outline-none transition focus:border-brand"
           aria-invalid={Boolean(state.errors?.name)}
           aria-describedby={state.errors?.name ? "name-error" : undefined}
         />
@@ -53,7 +53,7 @@ export function ContactForm() {
           type="email"
           name="email"
           placeholder="you@example.com"
-          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink outline-none transition focus:border-brand"
+          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink font-normal placeholder:text-soft outline-none transition focus:border-brand"
           aria-invalid={Boolean(state.errors?.email)}
           aria-describedby={state.errors?.email ? "email-error" : undefined}
         />
@@ -70,7 +70,7 @@ export function ContactForm() {
           type="text"
           name="type"
           placeholder="Website, app, WordPress, role..."
-          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink outline-none transition focus:border-brand"
+          className="h-11 w-full rounded-[14px] border border-line bg-bg px-3.5 text-[15px] text-ink font-normal placeholder:text-soft outline-none transition focus:border-brand"
         />
       </label>
 
@@ -79,7 +79,7 @@ export function ContactForm() {
         <textarea
           name="message"
           placeholder="Share the goal, link, timeline, or role details."
-          className="min-h-[120px] w-full resize-y rounded-[14px] border border-line bg-bg px-3.5 py-3 text-[15px] text-ink outline-none transition focus:border-brand"
+          className="min-h-[120px] w-full resize-y rounded-[14px] border border-line bg-bg px-3.5 py-3 text-[15px] text-ink font-normal placeholder:text-soft outline-none transition focus:border-brand"
           aria-invalid={Boolean(state.errors?.message)}
           aria-describedby={state.errors?.message ? "message-error" : undefined}
         />

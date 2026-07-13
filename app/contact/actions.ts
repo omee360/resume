@@ -46,8 +46,8 @@ export async function sendMessage(
 
   try {
     await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "umairhaider360@gmail.com",
+      from: "Umair Haider Hashmi <contact@umairdev.com>",
+      to: "umair@umairdev.com",
       replyTo: email,
       subject: `New contact form message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nProject type: ${type || "—"}\n\n${message}`,
